@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace Movies.Controllers
 {
@@ -13,9 +14,10 @@ namespace Movies.Controllers
     public class ChuckController : ControllerBase
     {
         [HttpGet]
-        public IEnumerable<string> Get()
+        public string Get()
         {
-            return new[] { "Chuck" };
+            var result = GetMessage().Result;
+            return result;
         }
 
         public static async Task<string> GetMessage()
