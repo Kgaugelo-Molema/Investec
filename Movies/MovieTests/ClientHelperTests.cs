@@ -13,11 +13,11 @@ namespace MovieTests
 
         [Theory]
         [InlineData(ClientHelper.chuckUrl)]
-        public void CanReturnCategories(string url)
+        [InlineData(ClientHelper.swapiUrl)]
+        public void GivenUrl_WhenRequesting_ThenReturnOk(string url)
         {
             var result = ClientHelper.GetMessage(null, url);
             Assert.Equal(HttpStatusCode.OK, result.Result.StatusCode);
         }
     }
-
 }
