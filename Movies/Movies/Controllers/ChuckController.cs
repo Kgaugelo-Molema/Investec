@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -14,9 +15,10 @@ namespace Movies.Controllers
     public class ChuckController : ControllerBase
     {
         [HttpGet]
-        public Task<string> Get()
+        public async Task<IEnumerable<string>> Get()
         {
-            return this.GetMessage(ClientHelper.chuckUrl);
+            var result = await this.GetMessage(ClientHelper.chuckUrl).Result.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<IEnumerable<string>>(result);
         }
     }
 }
