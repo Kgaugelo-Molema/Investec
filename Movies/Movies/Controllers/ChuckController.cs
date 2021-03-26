@@ -14,18 +14,9 @@ namespace Movies.Controllers
     public class ChuckController : ControllerBase
     {
         [HttpGet]
-        public string Get()
+        public Task<string> Get()
         {
-            var result = GetMessage().Result;
-            return result;
-        }
-
-        public static async Task<string> GetMessage()
-        {
-            var client = new HttpClient();
-            var stringTask = client.GetStringAsync("https://api.chucknorris.io/jokes/categories");
-
-            return await stringTask;
+            return this.GetMessage(ClientHelper.chuckUrl);
         }
     }
 }
