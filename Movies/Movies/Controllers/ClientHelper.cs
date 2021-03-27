@@ -13,6 +13,7 @@ namespace Movies.Controllers
         public const string chuckUrl = "https://api.chucknorris.io/jokes/categories";
         public const string swapiUrl = "https://swapi.dev/api/people/";
         public const string jokeUrl = "https://api.chucknorris.io/jokes/search?query=";
+        public const string peopleUrl = "https://swapi.dev/api/people/?search=";
 
         public static async Task<HttpResponseMessage> GetMessage(this ControllerBase controllerBase, string url)
         {

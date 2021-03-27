@@ -15,6 +15,7 @@ namespace MovieTests
         [InlineData(ClientHelper.chuckUrl)]
         [InlineData(ClientHelper.swapiUrl)]
         [InlineData(ClientHelper.jokeUrl + "animal")]
+        [InlineData(ClientHelper.peopleUrl + "Luke Skywalker")]
         public void GivenUrl_WhenRequesting_ThenReturnOk(string url)
         {
             var result = ClientHelper.GetMessage(null, url);

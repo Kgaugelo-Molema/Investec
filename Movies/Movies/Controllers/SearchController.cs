@@ -17,16 +17,13 @@ namespace Movies.Controllers
         [HttpGet]
         public async Task<SearchFilter> Get([FromQuery] string category, [FromQuery] string character)
         {
-            var result = await this.GetMessage(ClientHelper.chuckUrl).Result.Content.ReadAsStringAsync();
-            var categories = JsonConvert.DeserializeObject<IEnumerable<string>>(result);
-
-            var json = await this.GetMessage(ClientHelper.swapiUrl).Result.Content.ReadAsStringAsync();
+            var json = await this.GetMessage($"{ClientHelper.peopleUrl}{character}").Result.Content.ReadAsStringAsync();
             var swapiData = JsonConvert.DeserializeObject<SwapiData>(json);
 
             json = await this.GetMessage($"{ClientHelper.jokeUrl}{category}").Result.Content.ReadAsStringAsync();
             var jokeData = JsonConvert.DeserializeObject<JokeData>(json);
 
-            return new SearchFilter(categories.Where(c => c == category), swapiData.results.Where(r => r.Name == character), jokeData.result);
+            return new SearchFilter(swapiData.results, jokeData.result);
         }
     }
 }
