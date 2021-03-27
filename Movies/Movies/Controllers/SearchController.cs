@@ -23,7 +23,10 @@ namespace Movies.Controllers
             var json = await this.GetMessage(ClientHelper.swapiUrl).Result.Content.ReadAsStringAsync();
             var swapiData = JsonConvert.DeserializeObject<SwapiData>(json);
 
-            return new SearchFilter(categories.Where(c => c == category), swapiData.results.Where(r => r.Name == character));
+            json = await this.GetMessage($"{ClientHelper.jokeUrl}{category}").Result.Content.ReadAsStringAsync();
+            var jokeData = JsonConvert.DeserializeObject<JokeData>(json);
+
+            return new SearchFilter(categories.Where(c => c == category), swapiData.results.Where(r => r.Name == character), jokeData.result);
         }
     }
 }

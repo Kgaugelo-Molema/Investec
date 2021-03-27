@@ -7,5 +7,4 @@
         public object previous { get; set; }
         public Character[] results { get; set; }
     }
-
 }
