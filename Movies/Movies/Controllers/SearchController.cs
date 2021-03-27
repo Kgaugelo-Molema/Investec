@@ -14,6 +14,12 @@ namespace Movies.Controllers
     [ApiController]
     public class SearchController : ControllerBase
     {
+        /// <summary>
+        /// Simultaneously search both Chuck and Swapi
+        /// </summary>
+        /// <param name="category">Category Name</param>
+        /// <param name="character">Character Name</param>
+        /// <returns>List of people and jokes returned</returns>
         [HttpGet]
         public async Task<SearchFilter> Get([FromQuery] string category, [FromQuery] string character)
         {

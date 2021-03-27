@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Movies</name>
+    </assembly>
+    <members>
+        <member name="M:Movies.Controllers.ChuckController.Get">
+            <summary>
+            Get Operation
+            </summary>
+            <remarks>
+            Sample value of message
+            
+                POST /Todo
+                {
+                   "variable1": "Hi",
+                   "variable2": "Sukhpinder"
+                }
+                
+            </remarks>
+        </member>
+        <member name="M:Movies.Controllers.SearchController.Get(System.String,System.String)">
+            <summary>
+            Simultaneously search both Chuck and SWAPI
+            </summary>
+            <param name="category">Search category</param>
+            <param name="character">Search character</param>
+            <returns>List of people and jokes returned</returns>
+        </member>
+    </members>
+</doc>

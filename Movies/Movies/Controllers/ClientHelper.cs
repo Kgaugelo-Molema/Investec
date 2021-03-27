@@ -21,12 +21,5 @@ namespace Movies.Controllers
             var stringTask = client.GetAsync(url);
             return await stringTask;
         }
-
-        public static async Task<HttpResponseMessage> GetJokes(this ControllerBase controllerBase, string url)
-        {
-            var client = new HttpClient();
-            var stringTask = client.GetAsync(url);
-            return await stringTask;
-        }
     }
 }

@@ -136,3 +136,4 @@ C:\KMolema\Assessment\Investec\Movies\Movies\bin\Debug\netcoreapp3.1\Swashbuckle
 C:\KMolema\Assessment\Investec\Movies\Movies\obj\Debug\netcoreapp3.1\Movies.csproj.CoreCompileInputs.cache
 C:\KMolema\Assessment\Investec\Movies\Movies\obj\Debug\netcoreapp3.1\Movies.MvcApplicationPartsAssemblyInfo.cs
 C:\KMolema\Assessment\Investec\Movies\Movies\obj\Debug\netcoreapp3.1\Movies.MvcApplicationPartsAssemblyInfo.cache
+C:\KMolema\Assessment\Investec\Movies\Movies\bin\Debug\netcoreapp3.1\Movies.xml

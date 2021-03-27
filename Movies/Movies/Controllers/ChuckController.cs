@@ -14,6 +14,19 @@ namespace Movies.Controllers
     [ApiController]
     public class ChuckController : ControllerBase
     {
+        /// <summary>
+        /// Get Operation
+        /// </summary>
+        /// <remarks>
+        /// Sample value of message
+        /// 
+        ///     POST /Todo
+        ///     {
+        ///        "variable1": "Hi",
+        ///        "variable2": "Sukhpinder"
+        ///     }
+        ///     
+        /// </remarks>
         [HttpGet]
         public async Task<IEnumerable<string>> Get()
         {
