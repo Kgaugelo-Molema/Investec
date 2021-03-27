@@ -6,26 +6,20 @@
     <members>
         <member name="M:Movies.Controllers.ChuckController.Get">
             <summary>
-            Get Operation
+            List all Chuck Noris joke categories
             </summary>
-            <remarks>
-            Sample value of message
-            
-                POST /Todo
-                {
-                   "variable1": "Hi",
-                   "variable2": "Sukhpinder"
-                }
-                
-            </remarks>
         </member>
         <member name="M:Movies.Controllers.SearchController.Get(System.String,System.String)">
             <summary>
-            Simultaneously search both Chuck and SWAPI
+            Simultaneously query Chuck and Swapi endpoints
             </summary>
-            <param name="category">Search category</param>
-            <param name="character">Search character</param>
-            <returns>List of people and jokes returned</returns>
+            <param name="category">Joke category name</param>
+            <param name="character">Star Wars character name</param>
+        </member>
+        <member name="M:Movies.Controllers.SwapiController.Get">
+            <summary>
+            List all Star Wars charcaters
+            </summary>
         </member>
     </members>
 </doc>

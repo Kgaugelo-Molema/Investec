@@ -15,6 +15,9 @@ namespace Movies.Controllers
     [ApiController]
     public class SwapiController : ControllerBase
     {
+        /// <summary>
+        /// List all Star Wars charcaters
+        /// </summary>
         [HttpGet]
         public async Task<SwapiData> Get()
         {

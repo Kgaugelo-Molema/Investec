@@ -15,18 +15,8 @@ namespace Movies.Controllers
     public class ChuckController : ControllerBase
     {
         /// <summary>
-        /// Get Operation
+        /// List all Chuck Noris joke categories
         /// </summary>
-        /// <remarks>
-        /// Sample value of message
-        /// 
-        ///     POST /Todo
-        ///     {
-        ///        "variable1": "Hi",
-        ///        "variable2": "Sukhpinder"
-        ///     }
-        ///     
-        /// </remarks>
         [HttpGet]
         public async Task<IEnumerable<string>> Get()
         {
