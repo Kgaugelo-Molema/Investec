@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Model;
+using Movies.Model;
+using Newtonsoft.Json;
 
 namespace Movies.Controllers
 {
@@ -12,9 +15,15 @@ namespace Movies.Controllers
     public class SearchController : ControllerBase
     {
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<SearchFilter> Get([FromQuery] string category, [FromQuery] string character)
         {
-            return new[] { "Search" };
+            var result = await this.GetMessage(ClientHelper.chuckUrl).Result.Content.ReadAsStringAsync();
+            var categories = JsonConvert.DeserializeObject<IEnumerable<string>>(result);
+
+            var json = await this.GetMessage(ClientHelper.swapiUrl).Result.Content.ReadAsStringAsync();
+            var swapiData = JsonConvert.DeserializeObject<SwapiData>(json);
+
+            return new SearchFilter(categories.Where(c => c == category), swapiData.results.Where(r => r.Name == character));
         }
     }
 }

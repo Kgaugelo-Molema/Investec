@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "search",
+      "launchUrl": "search?category=animal&character=Luke Skywalker",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
