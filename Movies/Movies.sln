@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies", "Movies\Movies.csproj", "{1A3C52B6-A587-43EF-8D47-F7334AA6C99C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies", "Movies\Movies.csproj", "{1A3C52B6-A587-43EF-8D47-F7334AA6C99C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTests", "MovieTests\MovieTests.csproj", "{C3781ED7-D60B-4BDC-9C57-B0D0789C8DC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieTests", "MovieTests\MovieTests.csproj", "{C3781ED7-D60B-4BDC-9C57-B0D0789C8DC2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "..\..\registration-login-api\WebApi.csproj", "{8A14C024-4006-47E8-AA63-1FF687ACC76E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C3781ED7-D60B-4BDC-9C57-B0D0789C8DC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3781ED7-D60B-4BDC-9C57-B0D0789C8DC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3781ED7-D60B-4BDC-9C57-B0D0789C8DC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A14C024-4006-47E8-AA63-1FF687ACC76E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A14C024-4006-47E8-AA63-1FF687ACC76E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A14C024-4006-47E8-AA63-1FF687ACC76E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A14C024-4006-47E8-AA63-1FF687ACC76E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

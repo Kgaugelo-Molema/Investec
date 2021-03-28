@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Model;
+using Movies.Helpers;
 using Newtonsoft.Json;
 
 namespace Movies.Controllers

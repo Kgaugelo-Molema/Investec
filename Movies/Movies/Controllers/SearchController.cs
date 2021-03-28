@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Model;
+using Movies.Helpers;
 using Movies.Model;
 using Newtonsoft.Json;
 
