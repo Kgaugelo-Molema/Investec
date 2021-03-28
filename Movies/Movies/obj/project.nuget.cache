@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "pD4ESsNg5KCMgv3WHc+KO20LrMs4gWl5hWKuR/hvuU19ZOhvPFjMBxCjQZsY4TksJZyuTcWrXCaLQxfViLto8w==",
+  "dgSpecHash": "lTW40XbQc/ILDn28coDnZeuWhfeUNUi8UA1bS3vvAMD5pbaxNv5rMWPtLJvktoF7I2fivJEHLu3BUayF/Q5vRg==",
   "success": true,
   "projectFilePath": "C:\\KMolema\\Assessment\\Investec\\Movies\\Movies\\Movies.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\T460\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\T460\\.nuget\\packages\\automapper.collection\\7.0.1\\automapper.collection.7.0.1.nupkg.sha512",
+    "C:\\Users\\T460\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\T460\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\T460\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\T460\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",

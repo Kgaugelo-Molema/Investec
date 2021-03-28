@@ -155,6 +155,8 @@ C:\KMolema\Assessment\Investec\Movies\Movies\bin\Debug\netcoreapp3.1\runtimes\wi
 C:\KMolema\Assessment\Investec\Movies\Movies\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 C:\KMolema\Assessment\Investec\Movies\Movies\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 C:\KMolema\Assessment\Investec\Movies\Movies\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\KMolema\Assessment\Investec\Movies\Movies\bin\Debug\netcoreapp3.1\AutoMapper.Collection.dll
+C:\KMolema\Assessment\Investec\Movies\Movies\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\KMolema\Assessment\Investec\Movies\Movies\obj\Debug\netcoreapp3.1\Movies.csproj.CoreCompileInputs.cache
 C:\KMolema\Assessment\Investec\Movies\Movies\obj\Debug\netcoreapp3.1\Movies.MvcApplicationPartsAssemblyInfo.cs
 C:\KMolema\Assessment\Investec\Movies\Movies\obj\Debug\netcoreapp3.1\Movies.MvcApplicationPartsAssemblyInfo.cache

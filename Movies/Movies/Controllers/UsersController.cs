@@ -21,9 +21,11 @@ namespace Movies.Controllers
         private IUserService _userService;
 
         public UsersController(
+            IUserService userService,
             IMapper mapper)
         {
             _mapper = mapper;
+            _userService = userService;
         }
 
         // GET: api/Users
@@ -63,7 +65,10 @@ namespace Movies.Controllers
         public IActionResult Register([FromBody]RegisterModel model)
         {
             // map model to entity
-            var user = _mapper.Map<User>(model);
+            //var user = _mapper.Map<User>(model);
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<RegisterModel, User>());
+            var mapper = config.CreateMapper();
+            var user = mapper.Map<User>(model);
 
             try
             {

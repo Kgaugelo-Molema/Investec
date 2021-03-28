@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "CnWvG/fpJUSvwWheuFf7nNkxCNHvomJ3AZGkUAQbRB2vJTa3drBUG/QGWvgIbI7uweyLQ6Y5DnY6EOwkZ6VUBg==",
+  "dgSpecHash": "oUnn67mHm55R7ZhjDunzzPMUZW/5suZxP8IMZHhdRL7VIjxeKtYdL2UzQml6Tqk//M3mxYbCfCKGC/kXOoUxOQ==",
   "success": true,
   "projectFilePath": "C:\\KMolema\\Assessment\\Investec\\Movies\\MovieTests\\MovieTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\T460\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\T460\\.nuget\\packages\\automapper.collection\\7.0.1\\automapper.collection.7.0.1.nupkg.sha512",
+    "C:\\Users\\T460\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\T460\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\T460\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\T460\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
