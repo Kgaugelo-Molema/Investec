@@ -1,7 +1,6 @@
 ## Movies API
 Install the following before deploying to your machine:
-* Visual Studio 2019
-* .Net Core 3
+* .NET Core SDK: https://dotnet.microsoft.com/download/dotnet
 
 ## Deploy locally
 * Generate certificate (cd $MoviesSolutionDir\Movies) `dotnet dev-certs https`
