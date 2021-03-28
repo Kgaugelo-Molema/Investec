@@ -13,7 +13,7 @@ namespace MovieTests
         [InlineData(ClientHelper.swapiUrl)]
         [InlineData(ClientHelper.jokeUrl + "animal")]
         [InlineData(ClientHelper.peopleUrl + "Luke Skywalker")]
-        public void GivenUrl_WhenRequesting_ThenReturnOk(string url)
+        public void GivenValidUrl_WhenRequesting_ThenReturnOk(string url)
         {
             var result = ClientHelper.GetMessage(null, url);
             Assert.Equal(HttpStatusCode.OK, result.Result.StatusCode);

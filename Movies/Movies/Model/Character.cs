@@ -14,7 +14,7 @@ namespace Model
         public string gender { get; set; }
         public string homeworld { get; set; }
         public string[] films { get; set; }
-        public object[] species { get; set; }
+        public string[] species { get; set; }
         public string[] vehicles { get; set; }
         public string[] starships { get; set; }
         public DateTime created { get; set; }
