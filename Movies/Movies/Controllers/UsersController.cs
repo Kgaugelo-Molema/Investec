@@ -65,9 +65,7 @@ namespace Movies.Controllers
         public IActionResult Register([FromBody]RegisterModel model)
         {
             // map model to entity
-            //var user = _mapper.Map<User>(model);
-            var config = new MapperConfiguration(cfg => cfg.CreateMap<RegisterModel, User>());
-            var mapper = config.CreateMapper();
+            var mapper = this.GetMapper<RegisterModel, User>();
             var user = mapper.Map<User>(model);
 
             try
