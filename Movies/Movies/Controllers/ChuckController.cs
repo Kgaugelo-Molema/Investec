@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Movies.Helpers;
@@ -11,6 +12,7 @@ using Newtonsoft.Json;
 
 namespace Movies.Controllers
 {
+    [Authorize]
     [Route("[controller]")]
     [ApiController]
     public class ChuckController : ControllerBase
@@ -18,6 +20,7 @@ namespace Movies.Controllers
         /// <summary>
         /// List all Chuck Noris joke categories
         /// </summary>
+        [Authorize]
         [HttpGet]
         public async Task<IEnumerable<string>> Get()
         {

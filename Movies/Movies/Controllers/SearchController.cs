@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Model;
@@ -11,6 +12,7 @@ using Newtonsoft.Json;
 
 namespace Movies.Controllers
 {
+    [Authorize]
     [Route("[controller]")]
     [ApiController]
     public class SearchController : ControllerBase
@@ -20,6 +22,7 @@ namespace Movies.Controllers
         /// </summary>
         /// <param name="category">Joke category name</param>
         /// <param name="character">Star Wars character name</param>
+        [Authorize]
         [HttpGet]
         public async Task<SearchFilter> Get([FromQuery] string category, [FromQuery] string character)
         {
