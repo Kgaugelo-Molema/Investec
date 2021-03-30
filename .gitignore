@@ -3,3 +3,16 @@ Movies/MovieTests/bin
 Movies/MovieTests/obj
 Movies/.vs
 .suo
+/Movies/Movies/obj/Debug/netcoreapp3.1/staticwebassets
+/Movies/Movies/obj/Debug/netcoreapp3.1/Movies.AssemblyInfo.cs
+/Movies/Movies/obj/Debug/netcoreapp3.1/Movies.AssemblyInfoInputs.cache
+/Movies/Movies/obj/Debug/netcoreapp3.1/Movies.csproj.CopyComplete
+/Movies/Movies/obj/Debug/netcoreapp3.1/Movies.csproj.CoreCompileInputs.cache
+/Movies/Movies/obj/Debug/netcoreapp3.1/Movies.csprojAssemblyReference.cache
+/Movies/Movies/obj/Debug/netcoreapp3.1/Movies.dll
+/Movies/Movies/obj/Debug/netcoreapp3.1/Movies.genruntimeconfig.cache
+/Movies/Movies/obj/Debug/netcoreapp3.1/Movies.MvcApplicationPartsAssemblyInfo.cache
+/Movies/Movies/obj/Debug/netcoreapp3.1/Movies.MvcApplicationPartsAssemblyInfo.cs
+/Movies/Movies/obj/Debug/netcoreapp3.1/Movies.pdb
+/Movies/Movies/obj/Debug/netcoreapp3.1/Movies.RazorTargetAssemblyInfo.cache
+/Movies/Movies/obj/project.nuget.cache
