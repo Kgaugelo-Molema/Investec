@@ -9236,6 +9236,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.4",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5",
       "Swashbuckle.AspNetCore >= 6.1.1",
+      "Swashbuckle.AspNetCore.SwaggerGen >= 6.1.1",
       "System.IdentityModel.Tokens.Jwt >= 6.9.0"
     ]
   },
@@ -9331,6 +9332,10 @@
             "version": "[3.1.5, )"
           },
           "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "[6.1.1, )"
+          },
+          "Swashbuckle.AspNetCore.SwaggerGen": {
             "target": "Package",
             "version": "[6.1.1, )"
           },

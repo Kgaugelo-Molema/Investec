@@ -2614,6 +2614,7 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.5",
           "Swashbuckle.AspNetCore": "6.1.1",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.1.1",
           "System.IdentityModel.Tokens.Jwt": "6.9.0"
         },
         "compile": {
