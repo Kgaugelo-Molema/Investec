@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Movies.Helpers;
 using Movies.Model;
 using Movies.Services;
@@ -34,6 +35,21 @@ namespace Movies
             services.AddSwaggerGen(
                 c =>
                 {
+                    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Movies-API", Version = "v1" });
+                    c.AddSecurityDefinition("bearer", new OpenApiSecurityScheme
+                    {
+                        Name = "Authorization",
+                        Type = SecuritySchemeType.ApiKey,
+                        Scheme = "bearer",
+                        BearerFormat = "JWT",
+                        In = ParameterLocation.Header,
+                        Description = "JWT Authorization header using the Bearer scheme.",
+                    });
+
+                    //////Add Operation Specific Authorization///////
+                    c.OperationFilter<AuthOperationFilter>();
+                    ////////////////////////////////////////////////
+
                     var filePath = Path.Combine(System.AppContext.BaseDirectory, "Movies.xml");
                     c.IncludeXmlComments(filePath);
                 });

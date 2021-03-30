@@ -57,6 +57,7 @@ namespace Movies.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet]
         public IActionResult GetAll()
         {
