@@ -36,6 +36,9 @@ namespace Movies.Controllers
             _appSettings = appSettings.Value;
         }
 
+        /// <summary>
+        /// Register new users
+        /// </summary>
         [AllowAnonymous]
         [HttpPost("register")]
         public IActionResult Register([FromBody]RegisterModel model)
@@ -57,14 +60,9 @@ namespace Movies.Controllers
             }
         }
 
-        [Authorize]
-        [HttpGet]
-        public IActionResult GetAll()
-        {
-            var users = _userService.GetAll();
-            return Ok(users);
-        }
-
+        /// <summary>
+        /// Generate token for registered user
+        /// </summary>
         [AllowAnonymous]
         [HttpPost("authenticate")]
         public IActionResult Authenticate([FromBody]AuthenticateModel model)
@@ -97,6 +95,17 @@ namespace Movies.Controllers
                 LastName = user.LastName,
                 Token = tokenString
             });
+        }
+
+        /// <summary>
+        /// List all registered users
+        /// </summary>
+        [Authorize]
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            var users = _userService.GetAll();
+            return Ok(users);
         }
     }
 }

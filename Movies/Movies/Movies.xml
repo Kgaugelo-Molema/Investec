@@ -21,5 +21,20 @@
             List all Star Wars charcaters
             </summary>
         </member>
+        <member name="M:Movies.Controllers.UsersController.Register(Movies.Model.RegisterModel)">
+            <summary>
+            Register new users
+            </summary>
+        </member>
+        <member name="M:Movies.Controllers.UsersController.Authenticate(Movies.Model.AuthenticateModel)">
+            <summary>
+            Generate token for registered user
+            </summary>
+        </member>
+        <member name="M:Movies.Controllers.UsersController.GetAll">
+            <summary>
+            List all registered users
+            </summary>
+        </member>
     </members>
 </doc>
