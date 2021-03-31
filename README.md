@@ -1,4 +1,9 @@
 # Movies API
+## .Net Core librabries
+* Microsoft.EntityFrameworkCore
+* Microsoft.AspNetCore.Authentication
+* Swashbuckle.AspNetCore
+* System.IdentityModel.Tokens.Jwt
 
 ## Deploy locally
 * Install [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet)
